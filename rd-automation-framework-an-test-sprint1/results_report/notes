@@ -1,0 +1,53 @@
+
+manage DB notesbook
+
+- grouping folder base on purpose, 
+- naming convention
+-  leverage markdown
+- version control
+- Notebook Dependencies: 
+    + Define DAG between notebook ---> better understand data flow
+
+
+
+Delta Table
+
+ACID features
+
+-  schema evolution, transactional capabilities, data versioning, and performance optimization techniques
+-  ACID (Atomicity, Consistency, Isolation, Durability) transactional capabilities
+  
+    + copy on write / merge on read
+    + never overwrite - if interuprt/ failure cause inconsistent data
+    + read follow the meta construction
+    + --> more reliable data processing
+
+
+- write optimize
+  +  write-ahead logs. This ensures that writes are durable and recoverable even during failures or system crashes
+  +  a transaction log allowing easy rollbacks and recovery.
+
+- data versioning
+  + time travel + point in time query
+  + --> care with storage cost (too many version of history on update frequently table)
+  + if data modeling good ---> can reduce storage of different overtime / reduce storage 
+
+
+- schema evolution
+  + update schema without  full table rewrite
+
+- data consistency check
+  + during write ensure new data follow the schema constraint  (it not native data lake feature, but default in database/ dwh)
+
+
+
+
+Optimization features
+
+- powerful optimizations such as indexing, data
+        skipping, and caching to accelerate query performance. These optimizations
+        enable faster data access, efficient data pruning, and selective scanning,
+        significantly improving query response times
+
+
+- 

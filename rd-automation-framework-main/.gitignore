@@ -1,0 +1,32 @@
+# Test output
+test_results.txt
+# Cach
+__pycache__
+
+# Python byte-code
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.ropeproject
+
+# Virtual environment
+venv/
+env/
+myenv/
+
+# Test outputs
+*.rst
+*.log
+*.out
+*.err
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Package-specific files
+*.egg-info/
+dist/
+build/
